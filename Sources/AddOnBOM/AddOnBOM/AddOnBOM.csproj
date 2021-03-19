@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE80A09C-0CBA-4097-A263-1C891792F1F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AddOnBOM</RootNamespace>
+    <AssemblyName>AddOnBOM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CXS.Framework.Core">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Data">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.DomainObjects">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.DomainObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.UI">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.UIComponents">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Platform.UIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.BusinessLogic">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.Extensibility">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.Extensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ManagementUIComponents">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.ManagementUIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.UIComponents">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\CXS.Retail.UIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="CXSRetailPOS">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXSRetailPOS.exe</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.2.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.2.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2">
+      
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>C:\Program Files (x86)\CitiXsys\iVend Retail\ManagementConsole\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomButtonCreateBOM.cs" />
+    <Compile Include="iVendAddOn.cs" />
+    <Compile Include="MCMenuBOM.cs" />
+    <Compile Include="Models\ProductBOMModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewBOM.Designer.cs">
+      <DependentUpon>ViewBOM.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBOM.resx">
+      <DependentUpon>ViewBOM.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
